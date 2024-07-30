@@ -1,7 +1,6 @@
-import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navigation from "@/components/navigation";
 
 export default function RootLayout({
   children,
@@ -10,7 +9,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="bg-background text-foreground font-sans antialiased">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex w-full flex-col items-center justify-start p-8">
+            <Navigation />
+            {children}
+          </div>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
