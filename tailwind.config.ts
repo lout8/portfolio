@@ -67,10 +67,21 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        shake: {
+          "0%, 100%": { transform: "translateX(-15%)" },
+          "50%": { transform: "translateX(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        arrow: "shake 1s infinite",
+      },
+      scale: {
+        "102": "1.02",
+      },
+      spacing: {
+        calc: "calc(100vw - 100%)",
       },
     },
   },
