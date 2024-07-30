@@ -29,13 +29,13 @@ export default function Home() {
           <CardTitle>{homeData.title}</CardTitle>
           <CardDescription>{homeData.position}</CardDescription>
           <CardContent>
-            <p className="text-foreground/90 text-sm">{homeData.description}</p>
+            <p className="text-sm text-foreground/90">{homeData.description}</p>
           </CardContent>
           <CardFooter>
-            <Button className="gap-3" asChild>
+            <Button className="gap-2" asChild>
               <Link href={"/about"}>
                 More about me
-                <ArrowRight className="animate-arrow h-5 w-5" />
+                <ArrowRight className="h-5 w-5 animate-arrow" />
               </Link>
             </Button>
           </CardFooter>

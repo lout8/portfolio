@@ -52,6 +52,10 @@
 }
 
 @layer base {
+  html body[data-scroll-locked] {
+    --removed-body-scroll-bar-size: 0 !important;
+    margin-right: 0 !important;
+  }
   html {
     @apply scroll-smooth;
   }
@@ -59,6 +63,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground pl-calc;
+    @apply bg-background pl-calc text-foreground;
   }
 }

@@ -21,15 +21,15 @@ export type HomeType = {
 
 export type ExperienceType = {
   title: string;
-  experience: {
+  experiences: {
     title: string;
     company: string;
     duration: string;
     location: string;
-    descriptions: {
+    description: {
       title: string;
       tasks: string[];
-    }[];
+    };
   }[];
 };
 

@@ -13,26 +13,20 @@ import {
 import { cn } from "@/lib/utils";
 import Vector from "./svgs";
 import { ModeToggle } from "./theme-toggler";
-
-const menuItems = [
-  { href: "/", label: "Logo", icon: true },
-  { href: "/about", label: "About", icon: false },
-  { href: "/work", label: "Work", icon: false },
-  { href: "/contact", label: "Contact", icon: false },
-];
+import { menuItemsData } from "@/lib/data";
 
 export default function Navigation() {
   const pathname = usePathname();
   return (
     <NavigationMenu>
-      <NavigationMenuList className="bg-card justify-between rounded-md border p-1 shadow-lg">
-        {menuItems.map((item) => (
+      <NavigationMenuList className="justify-between rounded-md border bg-card p-1 shadow-lg">
+        {menuItemsData.map((item) => (
           <NavigationMenuItem key={item.href}>
             <Link href={item.href} legacyBehavior passHref>
               <NavigationMenuLink
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  item.icon && "h-10 w-10 p-0",
+                  item.icon && "h-10 w-10 p-0 max-sm:h-8 max-sm:w-8",
                   pathname === item.href
                     ? "bg-accent text-accent-foreground"
                     : ""

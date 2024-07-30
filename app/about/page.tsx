@@ -9,38 +9,36 @@ import PageLayout from "@/components/page-layout";
 const skillContent = cva(
   "flex flex-row justify-between gap-6 px-0 pt-6 max-sm:flex-wrap max-sm:justify-center"
 );
-export const skillsCard = cva(
+const skillsCard = cva(
   "w-full ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:scale-102"
 );
 
 export default function About() {
   return (
-    <PageLayout className="p-0">
+    <PageLayout className="gap-4 p-0">
       {/* ------------- row -------------- */}
       <Card tabIndex={0} className={skillsCard()}>
         <CardHeader>
           <CardTitle>{experienceData.title}</CardTitle>
           <CardContent className="space-y-8 p-0 pt-4">
-            {experienceData.experience.map((exp, index) => (
+            {experienceData.experiences.map((exp, index) => (
               <div key={index}>
                 <h1 className="text-xl font-medium">{exp.title}</h1>
                 <p className="text-lg font-medium opacity-80">{exp.company}</p>
                 <p className="text-base opacity-60">{exp.duration}</p>
                 <p className="text-base opacity-60">{exp.location}</p>
-                {exp.descriptions.map((description, index) => (
-                  <div key={index} className="mt-4">
-                    <h2 className="text-lg font-medium opacity-90">
-                      {description.title}
-                    </h2>
-                    <ul className="list-inside list-disc space-y-2 pl-4 pt-2">
-                      {description.tasks.map((task, taskIndex) => (
-                        <li key={taskIndex} className="text-sm opacity-70">
-                          {task}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                <div key={index} className="mt-4">
+                  <h2 className="font-medium opacity-90">
+                    {exp.description.title}
+                  </h2>
+                  <ul className="list-inside list-disc space-y-2 pl-4 pt-2">
+                    {exp.description.tasks.map((task, taskIndex) => (
+                      <li key={taskIndex} className="text-sm opacity-70">
+                        {task}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </CardContent>
@@ -98,7 +96,7 @@ export default function About() {
             </CardContent>
           </CardHeader>
         </Card>
-        <div className="inline-flex gap-4">
+        <div className="inline-flex gap-4 max-sm:flex-col">
           <Card tabIndex={0} className={skillsCard()}>
             <CardHeader>
               <CardTitle>{skillsData.prototyping.title}</CardTitle>
