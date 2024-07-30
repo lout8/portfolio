@@ -12,7 +12,7 @@ export default function PageLayout({
   return (
     <main
       className={cn(
-        "mt-4 flex w-full max-w-2xl flex-col items-center p-4",
+        "mt-4 flex w-full max-w-3xl flex-col items-center p-4",
         className
       )}
     >
