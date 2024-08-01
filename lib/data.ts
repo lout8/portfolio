@@ -1,5 +1,23 @@
-import { EducationType, ExperienceType, HomeType, SkillsType } from "./types";
+import {
+  FaEnvelope,
+  FaExternalLinkAlt,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+import { FaSquareUpwork } from "react-icons/fa6";
+
+import {
+  ContactType,
+  EducationType,
+  ExperienceType,
+  HomeType,
+  ProjectsType,
+  SkillsType,
+} from "./types";
 import myImage from "@/public/my-photo.jpg";
+import projectOne from "@/public/img/firstImg.jpg";
+import projectTwo from "@/public/img/second.jpg";
+import projectThree from "@/public/img/thirdImg.jpg";
 
 export const menuItemsData = [
   { href: "/", label: "Logo", icon: true },
@@ -109,3 +127,106 @@ export const educationData: EducationType = {
     },
   ],
 };
+
+export const projectsData: ProjectsType = [
+  {
+    title: "Personal",
+    projects: [
+      {
+        title: "Portfolio Website",
+        description:
+          "A personal portfolio website to showcase my projects and skills.",
+        about:
+          "This project was created using Next.js and Tailwind CSS. The site is fully responsive and optimized for performance.",
+        technologies: [
+          { icon: "nextjs", text: "Next.js" },
+          { icon: "tailwind", text: "Tailwind CSS" },
+          { icon: "ts", text: "TypeScript" },
+        ],
+        links: [
+          {
+            href: "https://github.com/username/portfolio",
+            icon: FaGithub,
+          },
+          {
+            href: "https://portfolio-username.vercel.app",
+            icon: FaExternalLinkAlt,
+          },
+        ],
+        image: projectOne,
+      },
+    ],
+  },
+  {
+    title: "Freelancing",
+    projects: [
+      {
+        title: "E-commerce Platform",
+        description: "An online platform for buying and selling products.",
+        about:
+          "Developed a full-featured e-commerce platform with user authentication, product management, and a shopping cart.",
+        technologies: [
+          { icon: "nextjs", text: "Next.js" },
+          { icon: "supabase", text: "Supabase" },
+          { icon: "tailwind", text: "Tailwind CSS" },
+        ],
+        links: [
+          {
+            href: "https://github.com/username/ecommerce-platform",
+            icon: FaGithub,
+          },
+          {
+            href: "https://ecommerce-platform-demo.vercel.app",
+            icon: FaExternalLinkAlt,
+          },
+        ],
+        image: projectTwo,
+      },
+      {
+        title: "Task Management App",
+        description:
+          "A task management app to help users stay organized and productive.",
+        about:
+          "This app allows users to create, update, and delete tasks, with features like due dates, reminders, and priority settings.",
+        technologies: [{ icon: "reactjs", text: "React" }],
+        links: [
+          {
+            href: "https://github.com/username/task-management-app",
+            icon: FaGithub,
+          },
+          {
+            href: "https://task-management-app.vercel.app",
+            icon: FaExternalLinkAlt,
+          },
+        ],
+        image: projectThree,
+      },
+    ],
+  },
+];
+
+export const contactData: ContactType = [
+  {
+    name: "e.loutos8@gmail.com",
+    description:
+      "Whether you have a question or just want to say hi, I will try my best to get back to you!",
+    href: "mailto:e.loutos8@gmail.com",
+    icon: FaEnvelope,
+  },
+  {
+    name: "Github",
+    description: "Find more of mine projects",
+    href: "https://github.com/lout8",
+    icon: FaGithub,
+  },
+  {
+    name: "linkdin",
+    href: "https://www.linkedin.com/in/elissaios-loutos-695024227/",
+    icon: FaLinkedin,
+  },
+  {
+    name: "Upwork",
+    href: "https://www.upwork.com/freelancers/~0172a70305e17de31f",
+    icon: FaSquareUpwork,
+  },
+];
