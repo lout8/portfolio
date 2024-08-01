@@ -20,8 +20,8 @@ export default function Home() {
       <Card>
         <CardHeader className="items-center justify-center text-center">
           <Image
-            width={144}
-            height={144}
+            width={300}
+            height={300}
             className="pointer-events-none relative mb-2 flex h-36 w-36 shrink-0 select-none overflow-hidden rounded-full object-cover max-md:h-28 max-md:w-28"
             src={homeData.image}
             alt="Photo of my self"

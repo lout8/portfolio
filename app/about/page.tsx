@@ -1,21 +1,21 @@
 import { cva } from "class-variance-authority";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  skillContent,
+  skillsCard,
+} from "@/components/ui/card";
 import Skills from "@/components/skills";
 import { cn } from "@/lib/utils";
 import { educationData, experienceData, skillsData } from "@/lib/data";
 import PageLayout from "@/components/page-layout";
 
-const skillContent = cva(
-  "flex flex-row justify-between gap-6 px-0 pt-6 max-sm:flex-wrap max-sm:justify-center"
-);
-const skillsCard = cva(
-  "w-full ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:scale-102"
-);
-
 export default function About() {
   return (
-    <PageLayout className="gap-4 p-0">
+    <PageLayout>
       {/* ------------- row -------------- */}
       <Card tabIndex={0} className={skillsCard()}>
         <CardHeader>

@@ -83,6 +83,9 @@ const config = {
       spacing: {
         calc: "calc(100vw - 100%)",
       },
+      screens: {
+        xs: "420px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

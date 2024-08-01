@@ -1,6 +1,14 @@
 import * as React from "react";
+import { cva } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
+
+const skillContent = cva(
+  "flex flex-row justify-between gap-6 max-sm:flex-wrap max-sm:justify-center"
+);
+const skillsCard = cva(
+  "w-full ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:scale-102"
+);
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -77,6 +85,8 @@ const CardFooter = React.forwardRef<
 CardFooter.displayName = "CardFooter";
 
 export {
+  skillContent,
+  skillsCard,
   Card,
   CardHeader,
   CardFooter,

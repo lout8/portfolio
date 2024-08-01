@@ -1,8 +1,9 @@
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 import { svgType } from "@/components/svgs";
 
-type SkillType = {
+export type SkillType = {
   icon: svgType;
   text: string;
 };
@@ -51,3 +52,18 @@ export type EducationType = {
     score: string;
   }[];
 };
+
+export type ProjectsType = {
+  title: string;
+  projects: {
+    title: string;
+    description: string;
+    about: string;
+    technologies: SkillType[];
+    links: {
+      href: string;
+      icon: IconType;
+    }[];
+    image: StaticImageData;
+  }[];
+}[];
