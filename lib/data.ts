@@ -34,8 +34,8 @@ export const homeData: HomeType = {
   image: myImage,
 };
 
-export const skillsData: SkillsType = {
-  languages: {
+export const skillsData: SkillsType = [
+  {
     title: "Languages",
     skills: [
       { icon: "js", text: "JavaScript" },
@@ -45,7 +45,7 @@ export const skillsData: SkillsType = {
       { icon: "python", text: "Python" },
     ],
   },
-  frameworks: {
+  {
     title: "Frameworks",
     skills: [
       { icon: "nextjs", text: "Next.js" },
@@ -53,7 +53,7 @@ export const skillsData: SkillsType = {
       { icon: "express", text: "Express.js" },
     ],
   },
-  databases: {
+  {
     title: "Databases",
     skills: [
       { icon: "postgresql", text: "PostgreSQL" },
@@ -61,7 +61,7 @@ export const skillsData: SkillsType = {
       { icon: "supabase", text: "Supabase" },
     ],
   },
-  styling: {
+  {
     title: "Styling",
     skills: [
       { icon: "tailwind", text: "Tailwind CSS" },
@@ -69,15 +69,15 @@ export const skillsData: SkillsType = {
       { icon: "daisyui", text: "DaisyUI" },
     ],
   },
-  collaboration: {
+  {
     title: "Collaboration",
     skills: [{ icon: "github", text: "GitHub" }],
   },
-  prototyping: {
+  {
     title: "Prototyping",
     skills: [{ icon: "figma", text: "Figma" }],
   },
-};
+];
 
 export const experienceData: ExperienceType = {
   title: "Experience",

@@ -8,18 +8,6 @@ export type SkillType = {
   text: string;
 };
 
-type SkillCategoryType = {
-  title: string;
-  skills: SkillType[];
-};
-
-export type HomeType = {
-  title: string;
-  position: string;
-  description: string;
-  image: StaticImageData;
-};
-
 export type ExperienceType = {
   title: string;
   experiences: {
@@ -35,13 +23,9 @@ export type ExperienceType = {
 };
 
 export type SkillsType = {
-  languages: SkillCategoryType;
-  frameworks: SkillCategoryType;
-  databases: SkillCategoryType;
-  styling: SkillCategoryType;
-  collaboration: SkillCategoryType;
-  prototyping: SkillCategoryType;
-};
+  title: string;
+  skills: SkillType[];
+}[];
 
 export type EducationType = {
   title: string;
@@ -52,6 +36,15 @@ export type EducationType = {
     score: string;
   }[];
 };
+
+export type HomeType = {
+  title: string;
+  position: string;
+  description: string;
+  image: StaticImageData;
+};
+
+export type AboutType = {};
 
 export type ProjectsType = {
   title: string;
