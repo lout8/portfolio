@@ -9,7 +9,7 @@ export default function Skills({
 }) {
   return (
     <div className="flex flex-col items-center">
-      <Vector className="h-16 w-16 max-lg:h-14 max-lg:w-14" type={icon} />
+      <Vector className="h-12 w-12 max-lg:h-10 max-lg:w-10" type={icon} />
       <p className="whitespace-nowrap text-lg font-bold max-lg:text-base">
         {text}
       </p>

@@ -1,7 +1,6 @@
 import React, {
   AnchorHTMLAttributes,
   DetailedHTMLProps,
-  ReactNode,
   forwardRef,
 } from "react";
 import { Slot } from "@radix-ui/react-slot";
@@ -12,12 +11,11 @@ interface HyperlinkProps
     HTMLAnchorElement
   > {
   href: string;
-  children: ReactNode;
   asChild?: boolean;
 }
 
 const Hyperlink = forwardRef<HTMLAnchorElement, HyperlinkProps>(
-  ({ href, children, asChild = false, ...rest }, ref) => {
+  ({ href, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "a";
     return (
       <Comp
@@ -25,10 +23,8 @@ const Hyperlink = forwardRef<HTMLAnchorElement, HyperlinkProps>(
         target="_blank"
         rel="noopener noreferrer"
         ref={ref}
-        {...rest}
-      >
-        {children}
-      </Comp>
+        {...props}
+      />
     );
   }
 );
