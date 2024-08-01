@@ -67,3 +67,10 @@ export type ProjectsType = {
     image: StaticImageData;
   }[];
 }[];
+
+export type ContactType = {
+  name?: string;
+  description?: string;
+  href: string;
+  icon: IconType;
+}[];

@@ -1,6 +1,13 @@
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaExternalLinkAlt,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+import { FaSquareUpwork } from "react-icons/fa6";
 
 import {
+  ContactType,
   EducationType,
   ExperienceType,
   HomeType,
@@ -195,5 +202,31 @@ export const projectsData: ProjectsType = [
         image: projectThree,
       },
     ],
+  },
+];
+
+export const contactData: ContactType = [
+  {
+    name: "e.loutos8@gmail.com",
+    description:
+      "Whether you have a question or just want to say hi, I will try my best to get back to you!",
+    href: "mailto:e.loutos8@gmail.com",
+    icon: FaEnvelope,
+  },
+  {
+    name: "Github",
+    description: "Find more of mine projects",
+    href: "https://github.com/lout8",
+    icon: FaGithub,
+  },
+  {
+    name: "linkdin",
+    href: "https://www.linkedin.com/in/elissaios-loutos-695024227/",
+    icon: FaLinkedin,
+  },
+  {
+    name: "Upwork",
+    href: "https://www.upwork.com/freelancers/~0172a70305e17de31f",
+    icon: FaSquareUpwork,
   },
 ];
