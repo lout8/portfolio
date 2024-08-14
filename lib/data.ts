@@ -11,6 +11,7 @@ import {
   EducationType,
   ExperienceType,
   HomeType,
+  MenuItemsType,
   ProjectsType,
   SkillsType,
 } from "./types";
@@ -19,7 +20,7 @@ import projectOne from "@/public/img/firstImg.jpg";
 import projectTwo from "@/public/img/second.jpg";
 import projectThree from "@/public/img/thirdImg.jpg";
 
-export const menuItemsData = [
+export const menuItemsData: MenuItemsType = [
   { href: "/", label: "Logo", icon: true },
   { href: "/about", label: "About", icon: false },
   { href: "/projects", label: "Projects", icon: false },

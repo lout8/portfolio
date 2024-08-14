@@ -3,6 +3,12 @@ import { IconType } from "react-icons";
 
 import { svgType } from "@/components/svgs";
 
+export type MenuItemsType = {
+  href: string;
+  label: string;
+  icon: boolean;
+}[];
+
 export type SkillType = {
   icon: svgType;
   text: string;
@@ -43,8 +49,6 @@ export type HomeType = {
   description: string;
   image: StaticImageData;
 };
-
-export type AboutType = {};
 
 export type ProjectsType = {
   title: string;

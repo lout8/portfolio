@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Metadata } from "next";
 
 import PageLayout from "@/components/page-layout";
 import {
@@ -21,7 +22,12 @@ import { cn } from "@/lib/utils";
 import Hyperlink from "@/components/hyperlink";
 import { Animation } from "@/components/animation";
 import { Button } from "@/components/ui/button";
-import { animationFocus } from "@/lib/sva";
+import { animationFocus } from "@/lib/cva";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Explore my professional portfolio, showcasing my projects",
+};
 
 export default function Projects() {
   return (
@@ -69,7 +75,7 @@ export default function Projects() {
                     </Card>
                   </Animation>
                 </SheetTrigger>
-                <SheetContent className="max-xs:w-full space-y-4 overflow-auto sm:max-w-lg">
+                <SheetContent className="space-y-4 overflow-auto max-xs:w-full sm:max-w-lg">
                   <SheetHeader>
                     <SheetTitle>{project.title}</SheetTitle>
                     <SheetDescription>{project.description}</SheetDescription>

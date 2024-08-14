@@ -1,10 +1,18 @@
+import { Metadata } from "next";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Skills from "@/components/skills";
 import { cn } from "@/lib/utils";
 import { educationData, experienceData, skillsData } from "@/lib/data";
 import PageLayout from "@/components/page-layout";
-import { Animation, animationsTypes } from "@/components/animation";
-import { animationFocus } from "@/lib/sva";
+import { Animation } from "@/components/animation";
+import { animationFocus } from "@/lib/cva";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Explore my professional portfolio, showcasing my skills, experience, and education",
+};
 
 const skillRows = ["col-span-2", "", "", "col-span-2", "", ""];
 
