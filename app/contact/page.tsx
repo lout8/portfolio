@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import PageLayout from "@/components/page-layout";
 import {
   Card,
@@ -9,7 +11,12 @@ import { contactData } from "@/lib/data";
 import Hyperlink from "@/components/hyperlink";
 import { cn } from "@/lib/utils";
 import { Animation, animationsTypes } from "@/components/animation";
-import { animationFocus } from "@/lib/sva";
+import { animationFocus } from "@/lib/cva";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Explore my professional portfolio, my contact info",
+};
 
 const contactRows = ["col-span-2", "row-span-2", "", ""];
 const contactAnimations: animationsTypes["direction"][] = [
