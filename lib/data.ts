@@ -15,10 +15,10 @@ import {
   ProjectsType,
   SkillsType,
 } from "./types";
-import myImage from "@/public/my-photo.jpg";
-import projectOne from "@/public/img/firstImg.jpg";
-import projectTwo from "@/public/img/second.jpg";
-import projectThree from "@/public/img/thirdImg.jpg";
+import MyImage from "@/public/my-photo.png";
+import Personal from "@/public/img/personal-image.png";
+import SerendipityExplorer from "@/public/img/serendipity-explorer-image.png";
+import WineAtWest from "@/public/img/wine-at-west-image.png";
 
 export const menuItemsData: MenuItemsType = [
   { href: "/", label: "Logo", icon: true },
@@ -32,7 +32,7 @@ export const homeData: HomeType = {
   position: "Web developer",
   description:
     "Specialized in front-end technologies with some back-end experience. Passionate about crafting responsive, user-friendly, and visually appealing web applications.",
-  image: myImage,
+  image: MyImage,
 };
 
 export const skillsData: SkillsType = [
@@ -134,27 +134,28 @@ export const projectsData: ProjectsType = [
     title: "Personal",
     projects: [
       {
-        title: "Portfolio Website",
+        title: "Personal - Portfolio",
         description:
-          "A personal portfolio website to showcase my projects and skills.",
+          "A personal portfolio website showcasing my projects, skills, and professional journey.",
         about:
-          "This project was created using Next.js and Tailwind CSS. The site is fully responsive and optimized for performance.",
+          "This portfolio website showcases my professional work, skills, and achievements in a clean, modern interface. Built with Next.js, Tailwind CSS, and Shadcn/ui, it's fully responsive and optimized for performance. TypeScript was used to ensure code quality, and the site offers smooth navigation, making it easy for visitors to explore my projects and connect with me.",
         technologies: [
           { icon: "nextjs", text: "Next.js" },
-          { icon: "tailwind", text: "Tailwind CSS" },
           { icon: "ts", text: "TypeScript" },
+          { icon: "tailwind", text: "Tailwind CSS" },
+          { icon: "shadcn", text: "Shadcn/ui" },
         ],
         links: [
           {
-            href: "https://github.com/username/portfolio",
+            href: "https://github.com/lout8/portfolio",
             icon: FaGithub,
           },
           {
-            href: "https://portfolio-username.vercel.app",
+            href: "https://www.elissaiosloutos.dev/",
             icon: FaExternalLinkAlt,
           },
         ],
-        image: projectOne,
+        image: Personal,
       },
     ],
   },
@@ -162,45 +163,43 @@ export const projectsData: ProjectsType = [
     title: "Freelancing",
     projects: [
       {
-        title: "E-commerce Platform",
-        description: "An online platform for buying and selling products.",
+        title: "Serendipity Explorer - Blog",
+        description:
+          "An inspiring blog for discovering unique experiences and ideas.",
         about:
-          "Developed a full-featured e-commerce platform with user authentication, product management, and a shopping cart.",
+          "Designed and developed Serendipity Explorer, a blog platform aimed at inspiring users by offering a collection of engaging content. The site features a modern user interface with smooth navigation and an engaging layout. Built with a focus on performance and user experience, it utilizes Next.js for fast loading times, Decap CMS for easy content management, and Tailwind CSS for responsive design.",
         technologies: [
           { icon: "nextjs", text: "Next.js" },
-          { icon: "supabase", text: "Supabase" },
+          { icon: "js", text: "Javascript" },
+          { icon: "Decapcms", text: "Decap CMS" },
           { icon: "tailwind", text: "Tailwind CSS" },
         ],
         links: [
           {
-            href: "https://github.com/username/ecommerce-platform",
-            icon: FaGithub,
-          },
-          {
-            href: "https://ecommerce-platform-demo.vercel.app",
+            href: "https://serendipityexplorer.com/",
             icon: FaExternalLinkAlt,
           },
         ],
-        image: projectTwo,
+        image: SerendipityExplorer,
       },
       {
-        title: "Task Management App",
-        description:
-          "A task management app to help users stay organized and productive.",
+        title: "Wine at West - Website",
+        description: "A website showcasing the dynamic menu of Cava & Deli",
         about:
-          "This app allows users to create, update, and delete tasks, with features like due dates, reminders, and priority settings.",
-        technologies: [{ icon: "reactjs", text: "React" }],
+          "Cava & Deli - Wine at West is a website designed to display the current menu of wines and deli items available for takeaway or dining in. The site features a clean and responsive design, ensuring easy access for customers on any device. The menu is dynamically updated by the store's admin, allowing for real-time changes to reflect the latest offerings. Developed with Next.js, TypeScript Tailwind CSS, and Shadcn/ui.",
+        technologies: [
+          { icon: "nextjs", text: "Next.js" },
+          { icon: "ts", text: "TypeScript" },
+          { icon: "tailwind", text: "Tailwind CSS" },
+          { icon: "shadcn", text: "Shadcn/ui" },
+        ],
         links: [
           {
-            href: "https://github.com/username/task-management-app",
-            icon: FaGithub,
-          },
-          {
-            href: "https://task-management-app.vercel.app",
+            href: "https://wineatwest.com/",
             icon: FaExternalLinkAlt,
           },
         ],
-        image: projectThree,
+        image: WineAtWest,
       },
     ],
   },
