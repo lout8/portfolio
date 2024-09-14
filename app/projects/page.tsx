@@ -33,14 +33,14 @@ export default function Projects() {
   return (
     <PageLayout>
       {projectsData.map((items, index) => (
-        <div key={index}>
+        <div key={index} className="w-full">
           <Animation delay="150ms">
             <h1 className="py-3 text-2xl font-semibold leading-none tracking-tight max-sm:text-xl">
               {items.title}
             </h1>
           </Animation>
 
-          <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
+          <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
             {items.projects.map((project, index) => (
               <Sheet key={index}>
                 <SheetTrigger
@@ -55,7 +55,7 @@ export default function Projects() {
                         <Image
                           width={300}
                           height={300}
-                          className="pointer-events-none h-full w-full select-none rounded-t-lg object-cover"
+                          className="pointer-events-none h-full w-full select-none rounded-t-lg object-cover object-top"
                           src={project.image}
                           alt="Photo of my self"
                           priority

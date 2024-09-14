@@ -19,12 +19,6 @@ export const metadata: Metadata = {
 };
 
 const contactRows = ["col-span-2", "row-span-2", "", ""];
-const contactAnimations: animationsTypes["direction"][] = [
-  "fadein",
-  "fadein",
-  "right",
-  "bottom",
-];
 
 export default function Contact() {
   return (
@@ -32,7 +26,7 @@ export default function Contact() {
       {contactData.map((contact, index) => (
         <Animation
           key={index}
-          direction={contactAnimations[index % contactAnimations.length]}
+          direction={"fadein"}
           className={cn(
             animationFocus(),
             "h-full rounded-lg hover:scale-102 max-sm:col-span-1 max-sm:row-span-1",
