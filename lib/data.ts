@@ -91,12 +91,11 @@ export const experienceData: ExperienceType = {
       description: {
         title: "Responsibilities",
         tasks: [
-          "Design UX/UI to create intuitive, responsive, and visually appealing web interfaces.",
-          "Implement modern front-end technologies, including HTML, CSS, Typescript, and Next.js.",
-          "Optimize web applications for maximum speed and scalability.",
-          "Utilize version control systems such as GitHub to manage codebase changes effectively.",
-          "Develop and maintain server-side logic using Next.js",
-          "Design and manage databases with Supabase (PostgreSQL) to ensure efficient data storage and retrieval.",
+          "Specialised in building responsive, dynamic web applications using Next.js, React.js, and TypeScript for efficient front-end development.",
+          "Integrated PostgreSQL databases and Supabase for back-end management, ensuring seamless web performance.",
+          "Created user-centric web designs with HTML5, CSS, and Tailwind CSS, optimizing for UX/UI and mobile responsiveness.",
+          "Collaborated using GitHub for version control, and leveraged tools like Figma for wireframing and UI design.",
+          "Expertise in developing RESTful APIs and optimizing web applications for SEO and performance.",
         ],
       },
     },
@@ -108,9 +107,10 @@ export const experienceData: ExperienceType = {
       description: {
         title: "Responsibilities",
         tasks: [
-          "Develop responsive websites tailored to client specifications using Next.js and React.js.",
-          "Utilize headless CMS solutions to create flexible and scalable content management systems.",
-          "Manage project expenses, including hosting and domain registration, to align with client budgets.",
+          "Delivered custom web solutions using Next.js and Tailwind CSS, optimizing for responsive design and UX/UI.",
+          "Developed SEO-optimized web applications and integrated REST APIs to enhance functionality.",
+          "Implemented headless and Git-based CMS systems to streamline content management for clients.",
+          "Leveraged HTML5 and modern JavaScript frameworks to build scalable web applications, ensuring mobile responsiveness and high performance.",
         ],
       },
     },
