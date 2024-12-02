@@ -176,7 +176,7 @@ export const projectsData: ProjectsType = [
         ],
         links: [
           {
-            href: "https://serendipityexplorer.com/",
+            href: "https://www.serendipityexplorer.com/",
             icon: FaExternalLinkAlt,
           },
         ],
@@ -195,7 +195,7 @@ export const projectsData: ProjectsType = [
         ],
         links: [
           {
-            href: "https://wineatwest.com/",
+            href: "https://www.wineatwest.com/",
             icon: FaExternalLinkAlt,
           },
         ],
