@@ -80,11 +80,11 @@ export default function Projects() {
                     <SheetTitle>{project.title}</SheetTitle>
                     <SheetDescription>{project.description}</SheetDescription>
                   </SheetHeader>
-                  <div className="relative h-1/3">
+                  <div className="relative h-fit">
                     <Image
-                      width={300}
-                      height={300}
-                      className="pointer-events-none h-full w-full select-none rounded-t-lg object-cover"
+                      width={1000}
+                      height={800}
+                      className="pointer-events-none h-fit w-full select-none rounded-t-lg object-scale-down"
                       src={project.image}
                       alt="Photo of my self"
                       priority
