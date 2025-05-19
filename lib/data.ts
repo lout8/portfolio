@@ -15,10 +15,6 @@ import {
   ProjectsType,
   SkillsType,
 } from "./types";
-import MyImage from "@/public/my-photo.png";
-import Personal from "@/public/img/personal-image.png";
-import SerendipityExplorer from "@/public/img/serendipity-explorer-image.png";
-import WineAtWest from "@/public/img/wine-at-west-image.png";
 
 export const menuItemsData: MenuItemsType = [
   { href: "/", label: "Logo", icon: true },
@@ -32,7 +28,7 @@ export const homeData: HomeType = {
   position: "Web developer",
   description:
     "Specialized in front-end technologies with some back-end experience. Passionate about crafting responsive, user-friendly, and visually appealing web applications.",
-  image: MyImage,
+  image: "/my-photo.png",
 };
 
 export const skillsData: SkillsType = [
@@ -50,8 +46,11 @@ export const skillsData: SkillsType = [
     title: "Frameworks",
     skills: [
       { icon: "nextjs", text: "Next.js" },
-      { icon: "reactjs", text: "React.js" },
-      { icon: "express", text: "Express.js" },
+      { icon: "reactjs", text: "React" },
+      { icon: "Astro", text: "Astro" },
+      { icon: "Angular", text: "Angular" },
+      { icon: "express", text: "Express" },
+      { icon: "Django", text: "Django" },
     ],
   },
   {
@@ -86,7 +85,7 @@ export const experienceData: ExperienceType = {
     {
       title: "Web developer",
       company: "Apes E.E",
-      duration: "Dec 2023 - Present",
+      duration: "Dec 2023 - May 2025",
       location: "Athens, Attiki, Greece",
       description: {
         title: "Responsibilities",
@@ -155,7 +154,7 @@ export const projectsData: ProjectsType = [
             icon: FaExternalLinkAlt,
           },
         ],
-        image: Personal,
+        image: "/img/personal-image.png",
       },
     ],
   },
@@ -180,7 +179,7 @@ export const projectsData: ProjectsType = [
             icon: FaExternalLinkAlt,
           },
         ],
-        image: SerendipityExplorer,
+        image: "/img/serendipity-explorer-image.png",
       },
       {
         title: "Wine at West - Website",
@@ -199,7 +198,27 @@ export const projectsData: ProjectsType = [
             icon: FaExternalLinkAlt,
           },
         ],
-        image: WineAtWest,
+        image: "/img/wine-at-west-image.png",
+      },
+      {
+        title: "Ventouris Events - Website",
+        description:
+          "An elegant website for a premium event planning and catering company",
+        about:
+          "Ventouris Events is a modern and stylish website showcasing the services and portfolio of a high-end event planning and catering company. Designed to communicate elegance and professionalism, the site features a visually appealing layout, responsive design, and informative content about event services and wedding planning. Built with Next.js, TypeScript, Tailwind CSS, and Shadcn/ui, it delivers a seamless experience across all devices.",
+        technologies: [
+          { icon: "nextjs", text: "Next.js" },
+          { icon: "ts", text: "TypeScript" },
+          { icon: "tailwind", text: "Tailwind CSS" },
+          { icon: "shadcn", text: "Shadcn/ui" },
+        ],
+        links: [
+          {
+            href: "https://ventourisevents.com/en",
+            icon: FaExternalLinkAlt,
+          },
+        ],
+        image: "/img/ventouris-events-image.png",
       },
     ],
   },

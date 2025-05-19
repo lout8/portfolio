@@ -47,7 +47,7 @@ export type HomeType = {
   title: string;
   position: string;
   description: string;
-  image: StaticImageData;
+  image: string;
 };
 
 export type ProjectsType = {
@@ -61,7 +61,7 @@ export type ProjectsType = {
       href: string;
       icon: IconType;
     }[];
-    image: StaticImageData;
+    image: string;
   }[];
 }[];
 
