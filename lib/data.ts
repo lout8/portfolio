@@ -220,6 +220,26 @@ export const projectsData: ProjectsType = [
         ],
         image: "/img/ventouris-events-image.png",
       },
+      {
+        title: "Pure Air Rentals - Website",
+        description:
+          "A professional showcase website for a climate control equipment rental business specializing in fans, heaters, and air conditioning units.",
+        about:
+          "Developed Pure Air Rentals, a clean and informative showcase website for a climate control equipment rental company. The site displays their range of equipment including fans, air coolers, heaters, and portable air conditioning units for events and temporary climate solutions. Features equipment galleries, service information, and customer testimonials, with contact options for rental inquiries. Built to present the business professionally while encouraging potential customers to get in touch for bookings.",
+        technologies: [
+          { icon: "Astro", text: "Astro" },
+          { icon: "ts", text: "TypeScript" },
+          { icon: "tailwind", text: "Tailwind CSS" },
+          { icon: "daisyui", text: "DaisyUI" },
+        ],
+        links: [
+          {
+            href: "https://pureairrentals.com/en/",
+            icon: FaExternalLinkAlt,
+          },
+        ],
+        image: "/img/pure-air-rentals-image.png",
+      },
     ],
   },
 ];
