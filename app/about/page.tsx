@@ -83,7 +83,7 @@ export default function About() {
                 <CardTitle>{item.title}</CardTitle>
                 <CardContent className="flex flex-row flex-wrap justify-around gap-10 pt-6">
                   {item.skills.map((skill, index) => (
-                    <Skills key={index} icon={skill.icon} text={skill.text} />
+                    <Skills key={index} {...skill} />
                   ))}
                 </CardContent>
               </CardHeader>

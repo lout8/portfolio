@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 
 import { svgType } from "@/components/svgs";
+import { SKILLS_MAP } from "./data";
 
 export type MenuItemsType = {
   href: string;
@@ -9,9 +10,16 @@ export type MenuItemsType = {
   icon: boolean;
 }[];
 
+export type SkillKey = keyof typeof SKILLS_MAP;
+
+export function defineSkillsMap<T extends Record<string, SkillType>>(map: T) {
+  return map;
+}
+
 export type SkillType = {
   icon: svgType;
   text: string;
+  link: string;
 };
 
 export type ExperienceType = {
